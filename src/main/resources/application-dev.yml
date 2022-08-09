@@ -1,0 +1,8 @@
+server:
+  port: 8800
+
+govion:
+  host: 172.16.10.7:3308
+  database: goinfo
+  username: root
+  password: 123456
