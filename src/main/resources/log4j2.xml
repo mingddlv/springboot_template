@@ -13,7 +13,7 @@
     <appenders>
         <console name="CONSOLE" target="SYSTEM_OUT">
             <!--输出日志的格式-->
-            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <PatternLayout pattern="%d %highlight{%-5level}{ERROR=Bright RED, WARN=Bright Yellow, INFO=Bright Green, DEBUG=Bright Cyan, TRACE=Bright White} %style{[%t]}{bright,magenta} %style{%c{1.}.%M(%L)}{cyan}: %msg%n"/>
             <!--控制台只输出level及其以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
             <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
         </console>

@@ -12,3 +12,11 @@ spring:
     password: ${govion.password}
 logging:
   config: classpath:log4j2.xml
+
+mybatis-plus:
+  #  mapper-locations: classpath:mapper/**/*Mapper.xml
+  configuration:
+    # 开启sql日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+  type-aliases-package: com.govion.goinfo.Bean
