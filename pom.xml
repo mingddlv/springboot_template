@@ -90,7 +90,23 @@
                 <excludes>
                     <exclude>application-dev.yml</exclude>
                     <exclude>application.yml</exclude>
+                    <exclude>**/*.ttf</exclude>
+                    <exclude>**/*.pdf</exclude>
+                    <exclude>**/*.woff</exclude>
+                    <exclude>**/*.woff2</exclude>
                 </excludes>
+            </resource>
+
+
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>false</filtering>
+                <includes>
+                    <include>**/*.ttf</include>
+                    <include>**/*.pdf</include>
+                    <include>**/*.woff</include>
+                    <include>**/*.woff2</include>
+                </includes>
             </resource>
 
             <resource>
