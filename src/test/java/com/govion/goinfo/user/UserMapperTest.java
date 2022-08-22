@@ -24,9 +24,22 @@ public class UserMapperTest {
 
     @Test
     public void testMapper(){
+
+        // 插入数据
+        User user = new User();
+        user.setJobNumber("LRH1");
+        user.setDepartment("AI");
+        user.setName("LRH");
+        user.setPassword("as");
+        user.setRoute("user");
+        userMapper.insert(user);
+
+
+        // 获取所有的符合列表
         List<User> userList = userMapper.selectList(null);
-        for (User user : userList) {
-           log.info(user.toString());
+        for (User user1 : userList) {
+           log.info(user1.toString());
         }
+
     }
 }

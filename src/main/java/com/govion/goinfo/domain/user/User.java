@@ -1,8 +1,11 @@
 package com.govion.goinfo.domain.user;
 
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.context.annotation.Primary;
 
 /**
  * @Author mingddlv
@@ -11,10 +14,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@TableName("user")
 public class User {
 
-    private Integer id;
-
+    @TableId
     private String jobNumber;
 
     private String password;
